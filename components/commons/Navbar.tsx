@@ -1,5 +1,5 @@
 import { Button, Navbar, ScrollArea } from "@mantine/core";
-import LoginComponent from "../login";
+import Link from "next/link";
 
 const MyNavbar = () => {
   return (
@@ -12,8 +12,13 @@ const MyNavbar = () => {
         sx={{ paddingLeft: 10, paddingRight: 10 }}
       >
         <br />
-        <Navbar.Section>Stocks</Navbar.Section>
-        <Navbar.Section>Branches</Navbar.Section>
+        <Navbar.Section>
+          <Link href="/stocks">
+            <Button variant="outline" fullWidth>
+              Stocks
+            </Button>
+          </Link>
+        </Navbar.Section>
       </Navbar.Section>
     </Navbar>
   );

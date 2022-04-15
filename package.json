@@ -6,14 +6,17 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "typescheck": "tsc",
+    "typescheck:watch": "tsc -w"
   },
   "dependencies": {
-    "@mantine/core": "^3.5.4",
-    "@mantine/dates": "^3.5.4",
-    "@mantine/hooks": "^3.5.4",
-    "@mantine/notifications": "^3.5.4",
-    "@mantine/prism": "^3.5.4",
+    "@mantine/core": "^3.5.5",
+    "@mantine/dates": "^3.5.5",
+    "@mantine/hooks": "^3.5.5",
+    "@mantine/notifications": "^3.5.5",
+    "@mantine/prism": "^3.5.5",
+    "@mantine/dropzone": "^3.5.5",
     "axios": "^0.24.0",
     "dayjs": "^1.10.7",
     "next": "12.0.7",

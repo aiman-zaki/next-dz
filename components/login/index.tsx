@@ -8,7 +8,7 @@ const LoginComponent = ({ providers }: ILogin) => {
   return (
     <>
       <>
-        <Card>
+        <Card style={{ margin: "auto" }}>
           {!session &&
             Object.values(providers).map((provider) => (
               <div key={provider.name}>
